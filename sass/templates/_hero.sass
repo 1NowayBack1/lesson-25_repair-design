@@ -1,0 +1,104 @@
+.hero
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background: $dark url("../img/hero-bg.jpg") no-repeat center/cover
+  height: 100vh
+  color: $light
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba($dark, 0.7)   
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100% 
+    height: 3rem
+    background: $dark
+  &__content
+    position: relative
+    max-width: 47.85rem
+    margin-left: 4.28rem
+    width: 100%
+  &__title
+    margin-bottom: 1rem
+  &__text
+    font-size: 1.57rem
+    max-width: 500px
+    line-height: 131%
+    margin: 0
+    margin-bottom: 3.4rem
+  &__button
+    margin-right: 17px    
+  &__instagram
+    position: absolute
+    left: 0
+    top: 0
+    max-width: 82px
+  &__scroll-down
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    z-index: 3
+    left: 0
+    bottom: 0
+    min-width: 17.7rem
+    min-height: 7rem
+    background: $dark
+    text-transform: uppercase
+    color: $light
+    text-decoration: none
+    transition: 0.2s
+    font-family: 'Yeseva One', cursive
+    line-height: 138.6%
+    font-size: 0.857rem
+    &:hover
+      color: $primary
+    &::after
+      content: ''
+      background: url('../img/arrow-down.svg') center no-repeat 
+      width: 30px
+      height: 30px
+      border: 2px solid $primary
+      border-radius: 50%
+      margin-left: 18px
+.instagram
+  display: flex
+  justify-content: center
+  align-items: center
+  background: $dark
+  height: 100%
+  &__link
+    display: flex
+    align-items: center
+    text-transform: uppercase
+    color: $primary
+    text-decoration: none
+    transform: rotate(90deg)
+    transition: 0.2s
+    font-size: 1.05rem
+    &:hover
+      color: $light
+    &::after
+      content: ''
+      width: 50px
+      height: 1px
+      background: $primary
+      margin-left: 16px    
+.title
+  font-family: 'Yeseva One', cursive
+  text-transform: uppercase
+  font-size: 2.857rem
+  line-height: 132.8%
+  font-weight: normal
+  &_primary
+    color: $primary
